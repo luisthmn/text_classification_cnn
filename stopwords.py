@@ -8,7 +8,11 @@ def load_stopwords():
 
 
 def remove_stopwords(corpus, stopwords):
+    new_corpus = []
     for x in corpus:
-        for word in x:
-            if x in stopwords:
-                x.remove(word)
+        words = [word for word in x.split() if not word in stopwords]
+        x = ""
+        for i in words:
+            x += i + " "
+        new_corpus.append(x)
+    return new_corpus

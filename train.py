@@ -21,7 +21,7 @@ reviews.download_reviews()
 
 # Parametros de nuestro modelo y nuestro tokenizer
 vocab_size = 2000       # Cantidad de palabras que estaremos manejando
-maxlen = 800           # Longitud máxima de una review
+maxlen = 1000           # Longitud máxima de una review
 batch_size = 32        # 32
 embedding_dims = 50    # Cantidad de dimensiones en el Embedding Layer    10
 filters = 16           # 16
@@ -37,8 +37,8 @@ stopwords_list = stopwords.load_stopwords()
 print("Stopwords loaded")
 
 # Eliminamos las stopwords de nuestro dataset
-stopwords.remove_stopwords(X_train, stopwords_list)
-stopwords.remove_stopwords(X_test, stopwords_list)
+X_train = stopwords.remove_stopwords(X_train, stopwords_list)
+X_test = stopwords.remove_stopwords(X_test, stopwords_list)
 print("Stopwords removed from dataset")
 
 # Creamos nuestro tokenizer, lo entrenamos con nuestro dataset y lo guardamos

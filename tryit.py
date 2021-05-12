@@ -6,7 +6,7 @@ from tensorflow.keras.models import load_model
 
 def clasificaReview(review):
 
-    pad_length = 800
+    pad_length = 1000
     tokenizer = pickle.load(open("tokenizer.pkl", "rb"))
     model = load_model('model')
 
