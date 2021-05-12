@@ -25,7 +25,7 @@ Una vez que hayamos descargado el dataset, corremos el siguiente archivo.
 ```
 $ python train.py
 ```
-Este archivo realizará el preprocesamiento del texto, creará nuestro modelo y lo entrenará usando nuestro dataset, al finalizar el proceso se mostrarán los resultados de accuraccy y loss, el modelo ser guardará dentro del directorio del archivo en una carpeta llamada "model". Puede cargarse nuevamente corriendo la siguiente linea:
+Este archivo realizará el preprocesamiento del texto, creará nuestro modelo y lo entrenará usando nuestro dataset, al finalizar el proceso se mostrarán los resultados de accuraccy y loss, el modelo se guardará dentro del directorio del archivo en una carpeta llamada "model". Puede cargarse nuevamente corriendo la siguiente linea:
 
 ```
 >>> from tensorflow import keras
