@@ -32,4 +32,4 @@ Este archivo realizará el preprocesamiento del texto, creará nuestro modelo y 
 >>> model = keras.models.load_model('path/to/location')
 ```
 
-Para obtener una explicación más detallada de las técnicas de preprocesamiento y el funcionamiento del modelo en el siguiente [artículo de medium]().
+Para obtener una explicación más detallada de las técnicas de preprocesamiento y el funcionamiento del modelo en el siguiente [artículo de medium](https://luisthmn.medium.com/clasificaci%C3%B3n-de-texto-usando-cnns-526a93ae3828).
