@@ -34,6 +34,7 @@ epochs = 15           # 25
 
 # Pasamos todas las reviews a minusculas
 X_train = map(str.lower, X_train)
+X_test = map(str.lower, X_test)
 
 # Cargamos nuestras stopwords
 stopwords_list = stopwords.load_stopwords()
