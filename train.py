@@ -32,6 +32,9 @@ epochs = 15           # 25
 # Cargamos nuestro dataset con las reviews
 (X_train, y_train), (X_test, y_test) = reviews.load_imdb()
 
+# Pasamos todas las reviews a minusculas
+X_train = map(str.lower, X_train)
+
 # Cargamos nuestras stopwords
 stopwords_list = stopwords.load_stopwords()
 print("Stopwords loaded")
