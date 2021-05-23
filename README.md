@@ -15,17 +15,13 @@ Este proyecto utiliza la siguiente versión de Keras:
 * Keras (2.4.3)
 	
 ### Instrucciones de uso
-Para poder utilizar nuestro proyecto, tenemos que descargar las reviews que usaremos, esto se hace automaticamente corriendo el siguiente archivo.
-
-```
-$ python reviews.py
-```
-Una vez que hayamos descargado el dataset, corremos el siguiente archivo.
+Para poder utilizar nuestro proyecto, tenemos que descargar las reviews que usaremos, despues se realizará el preprocesamiento del texto, creará nuestro modelo y lo entrenará usando nuestro dataset, al finalizar el proceso se mostrarán los resultados de accuraccy y loss. Todo esto se realiza automáticamente al correr el siguiente archivo:
 
 ```
 $ python train.py
 ```
-Este archivo realizará el preprocesamiento del texto, creará nuestro modelo y lo entrenará usando nuestro dataset, al finalizar el proceso se mostrarán los resultados de accuraccy y loss, el modelo se guardará dentro del directorio del archivo en una carpeta llamada "model". Puede cargarse nuevamente corriendo la siguiente linea:
+
+El modelo se guardará dentro del directorio del archivo en una carpeta llamada "model". Puede cargarse nuevamente corriendo la siguiente linea:
 
 ```
 >>> from tensorflow import keras
